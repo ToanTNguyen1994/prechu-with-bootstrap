@@ -1,0 +1,162 @@
+/* Reset margin for body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 1% 10%;
+}
+
+@media (max-width: 640px) {
+    header {
+        margin: 2% 2%;
+        justify-content: space-evenly;
+    }
+}
+
+/* Left Side Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Fixed size for consistency */
+    height: auto;
+}
+
+.logo p {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav li {
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7c7c7c;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: black;
+    border-bottom: solid #5094f2 3px;
+}
+
+/* Phone Image Section */
+.phone-image {
+    display: flex;
+    justify-content: center;
+}
+
+.phone-image img {
+    width: 100%;
+    max-width: 600px; /* Limits max size for large screens */
+}
+
+/* Popular Section */
+.popular {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.popular-item {
+    flex: 1 1 300px;
+    max-width: 30%;
+}
+
+.popular-item h3 {
+    color: #5094f2;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.popular-item p {
+    color: #7c7c7c;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.popular-item img {
+    width: 60px;
+}
+
+/* Shopping Cart */
+.shopping-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: solid #dfdfdf 1px;
+    flex-wrap: wrap;
+}
+
+.cart {
+    text-align: center;
+    flex: 1 1 45%;
+}
+
+.cart img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.cart h2 {
+    color: #7c7c7c;
+    font-size: 24px;
+}
+
+/* Bullet Text Section */
+.bullet-text {
+    flex: 1 1 45%;
+    color: #7c7c7c;
+}
+
+.bullet-text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.bullet-text ul {
+    padding-left: 20px;
+}
+
+.bullet-text ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+footer p {
+    color: #7c7c7c;
+    font-size: 14px;
+    margin: 0;
+}
